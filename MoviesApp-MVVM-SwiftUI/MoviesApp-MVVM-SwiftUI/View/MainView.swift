@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
-    @ObservedObject var viewModel = MainViewModelURLSession()
+    @ObservedObject var viewModel = MainViewModelAlamofire()
     
     init() {
         viewModel.loadCategories()
