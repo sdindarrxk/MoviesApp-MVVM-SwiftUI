@@ -8,15 +8,14 @@
 import SwiftUI
 
 struct DetailView: View {
-    var movie = Movie()
+    var movie = MovieFirebase()
     
     var body: some View {
         VStack(spacing: 30) {
             MovieImage(imageName: movie.image ?? .init())
                 .frame(width: 300, height: 400)
                 
-            
-            Text(movie.director?.name ?? .init())
+            Text(movie.directorName ?? .init())
                 .font(.system(size: 25))
             
             Text(String(movie.year ?? .init()))

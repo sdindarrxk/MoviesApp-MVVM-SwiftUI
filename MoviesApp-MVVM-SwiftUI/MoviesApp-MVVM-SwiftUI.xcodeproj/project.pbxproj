@@ -15,6 +15,11 @@
 		35A870742C14C143008C89F4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 35A870732C14C143008C89F4 /* Alamofire */; };
 		35A870772C14C170008C89F4 /* MovieViewModelAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A870762C14C170008C89F4 /* MovieViewModelAlamofire.swift */; };
 		35A870792C14C181008C89F4 /* MainViewModelAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A870782C14C181008C89F4 /* MainViewModelAlamofire.swift */; };
+		35A8707C2C14C858008C89F4 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 35A8707B2C14C858008C89F4 /* FirebaseDatabase */; };
+		35A8707E2C14C862008C89F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35A8707D2C14C862008C89F4 /* GoogleService-Info.plist */; };
+		35A870812C14C886008C89F4 /* MainViewModelFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A870802C14C886008C89F4 /* MainViewModelFirebase.swift */; };
+		35A870832C14C8A3008C89F4 /* MovieViewModelFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A870822C14C8A3008C89F4 /* MovieViewModelFirebase.swift */; };
+		35A870852C14CC9F008C89F4 /* MovieFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A870842C14CC9F008C89F4 /* MovieFirebase.swift */; };
 		35CC89C02C145FE200F08031 /* MoviesApp_MVVM_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CC89BF2C145FE200F08031 /* MoviesApp_MVVM_SwiftUIApp.swift */; };
 		35CC89C22C145FE200F08031 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CC89C12C145FE200F08031 /* MainView.swift */; };
 		35CC89C42C145FE300F08031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35CC89C32C145FE300F08031 /* Assets.xcassets */; };
@@ -39,6 +44,10 @@
 		35A8706F2C14BEEA008C89F4 /* MovieImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieImage.swift; sourceTree = "<group>"; };
 		35A870762C14C170008C89F4 /* MovieViewModelAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModelAlamofire.swift; sourceTree = "<group>"; };
 		35A870782C14C181008C89F4 /* MainViewModelAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelAlamofire.swift; sourceTree = "<group>"; };
+		35A8707D2C14C862008C89F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		35A870802C14C886008C89F4 /* MainViewModelFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelFirebase.swift; sourceTree = "<group>"; };
+		35A870822C14C8A3008C89F4 /* MovieViewModelFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModelFirebase.swift; sourceTree = "<group>"; };
+		35A870842C14CC9F008C89F4 /* MovieFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFirebase.swift; sourceTree = "<group>"; };
 		35CC89BC2C145FE200F08031 /* MoviesApp-MVVM-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MoviesApp-MVVM-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CC89BF2C145FE200F08031 /* MoviesApp_MVVM_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesApp_MVVM_SwiftUIApp.swift; sourceTree = "<group>"; };
 		35CC89C12C145FE200F08031 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -60,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35A8707C2C14C858008C89F4 /* FirebaseDatabase in Frameworks */,
 				35A870742C14C143008C89F4 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +121,15 @@
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
+		35A8707F2C14C871008C89F4 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				35A870802C14C886008C89F4 /* MainViewModelFirebase.swift */,
+				35A870822C14C8A3008C89F4 /* MovieViewModelFirebase.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		35CC89B32C145FE200F08031 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +154,7 @@
 				35CC89CF2C14604300F08031 /* View */,
 				35CC89D12C14605F00F08031 /* ViewModel */,
 				35A8706E2C14B97C008C89F4 /* Info.plist */,
+				35A8707D2C14C862008C89F4 /* GoogleService-Info.plist */,
 				35CC89CE2C14600B00F08031 /* Assets */,
 			);
 			path = "MoviesApp-MVVM-SwiftUI";
@@ -183,6 +203,7 @@
 				35CC89D32C14630E00F08031 /* Category.swift */,
 				35CC89D52C1463B900F08031 /* Director.swift */,
 				35CC89D72C14642F00F08031 /* Movie.swift */,
+				35A870842C14CC9F008C89F4 /* MovieFirebase.swift */,
 				35A870632C14B6D2008C89F4 /* ResponseModel */,
 			);
 			path = Model;
@@ -191,6 +212,7 @@
 		35CC89D12C14605F00F08031 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				35A8707F2C14C871008C89F4 /* Firebase */,
 				35A870752C14C153008C89F4 /* Alamofire */,
 				35A870652C14B6FD008C89F4 /* URLSession */,
 				35A870642C14B6F4008C89F4 /* Mock */,
@@ -225,6 +247,7 @@
 			name = "MoviesApp-MVVM-SwiftUI";
 			packageProductDependencies = (
 				35A870732C14C143008C89F4 /* Alamofire */,
+				35A8707B2C14C858008C89F4 /* FirebaseDatabase */,
 			);
 			productName = "MoviesApp-MVVM-SwiftUI";
 			productReference = 35CC89BC2C145FE200F08031 /* MoviesApp-MVVM-SwiftUI.app */;
@@ -256,6 +279,7 @@
 			mainGroup = 35CC89B32C145FE200F08031;
 			packageReferences = (
 				35A870722C14C143008C89F4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				35A8707A2C14C858008C89F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 35CC89BD2C145FE200F08031 /* Products */;
 			projectDirPath = "";
@@ -273,6 +297,7 @@
 			files = (
 				35CC89C72C145FE300F08031 /* Preview Assets.xcassets in Resources */,
 				35CC89C42C145FE300F08031 /* Assets.xcassets in Resources */,
+				35A8707E2C14C862008C89F4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +308,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35A870832C14C8A3008C89F4 /* MovieViewModelFirebase.swift in Sources */,
 				35CC89C22C145FE200F08031 /* MainView.swift in Sources */,
+				35A870852C14CC9F008C89F4 /* MovieFirebase.swift in Sources */,
 				35CC89DE2C14A20200F08031 /* MovieRow.swift in Sources */,
 				35CC89DA2C14A1DA00F08031 /* MovieView.swift in Sources */,
 				35CC89D62C1463B900F08031 /* Director.swift in Sources */,
@@ -298,6 +325,7 @@
 				35A870792C14C181008C89F4 /* MainViewModelAlamofire.swift in Sources */,
 				35A870692C14B740008C89F4 /* MovieViewModelURLSession.swift in Sources */,
 				35CC89E02C14A21600F08031 /* CategoryRow.swift in Sources */,
+				35A870812C14C886008C89F4 /* MainViewModelFirebase.swift in Sources */,
 				35CC89D82C14642F00F08031 /* Movie.swift in Sources */,
 				35A870702C14BEEA008C89F4 /* MovieImage.swift in Sources */,
 				35A8706D2C14B834008C89F4 /* CategoryResponse.swift in Sources */,
@@ -518,6 +546,14 @@
 				minimumVersion = 5.9.1;
 			};
 		};
+		35A8707A2C14C858008C89F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.27.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -525,6 +561,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 35A870722C14C143008C89F4 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		35A8707B2C14C858008C89F4 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35A8707A2C14C858008C89F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

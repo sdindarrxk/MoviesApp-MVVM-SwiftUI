@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MovieView: View {
-    @ObservedObject var viewModel = MovieViewModelAlamofire()
+    @ObservedObject var viewModel = MovieViewModelFirebase()
     
     var category = Category()
     
@@ -30,7 +30,7 @@ struct MovieView: View {
             .navigationTitle(category.name ?? .init())
             .navigationBarTitleDisplayMode(.inline)
             .onAppear {
-                viewModel.loadMovies(categoryId: category.id ?? .init())
+                viewModel.loadMovies(categoryName: category.name ?? .init())
             }
         }
     }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MovieRow: View {
-    var movie = Movie()
+    var movie = MovieFirebase()
     var width = 0.0
     
     var body: some View {
