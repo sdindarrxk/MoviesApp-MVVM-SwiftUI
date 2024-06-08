@@ -12,7 +12,9 @@ struct DetailView: View {
     
     var body: some View {
         VStack(spacing: 30) {
-            Image(movie.image ?? .init())
+            MovieImage(imageName: movie.image ?? .init())
+                .frame(width: 300, height: 400)
+                
             
             Text(movie.director?.name ?? .init())
                 .font(.system(size: 25))

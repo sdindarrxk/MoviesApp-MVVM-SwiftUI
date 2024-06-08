@@ -13,8 +13,7 @@ struct MovieRow: View {
     
     var body: some View {
         VStack(spacing: 25) {
-            Image(movie.image ?? .init())
-                .resizable()
+            MovieImage(imageName: movie.image ?? .init())
                 .frame(width: width)
             
             Text(movie.name ?? .init())

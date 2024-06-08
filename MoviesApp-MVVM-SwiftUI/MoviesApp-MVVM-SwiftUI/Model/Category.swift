@@ -7,9 +7,14 @@
 
 import Foundation
 
-class Category: Identifiable {
+class Category: Identifiable, Codable {
     var id: String?
     var name: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case id = "kategori_id"
+        case name = "kategori_ad"
+    }
     
     init() {
         

@@ -7,13 +7,22 @@
 
 import Foundation
 
-class Movie: Identifiable {
+class Movie: Identifiable, Codable {
     var id: String?
     var name: String?
     var year: String?
     var image: String?
     var category: Category?
     var director: Director?
+    
+    enum CodingKeys: String, CodingKey {
+        case id = "film_id"
+        case name = "film_ad"
+        case year = "film_yil"
+        case image = "film_resim"
+        case category = "kategori"
+        case director = "yonetmen"
+    }
     
     init() {
         

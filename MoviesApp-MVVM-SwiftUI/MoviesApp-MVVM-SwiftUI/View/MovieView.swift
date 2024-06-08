@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MovieView: View {
-    @ObservedObject var viewModel = MovieViewModel()
+    @ObservedObject var viewModel = MovieViewModelURLSession()
     
     var category = Category()
     

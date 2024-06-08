@@ -7,9 +7,14 @@
 
 import Foundation
 
-class Director: Identifiable {
+class Director: Identifiable, Codable {
     var id: String?
     var name: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case id = "yonetmen_id"
+        case name = "yonetmen_ad"
+    }
     
     init() {
         
